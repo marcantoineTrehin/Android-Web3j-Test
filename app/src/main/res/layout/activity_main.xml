@@ -6,13 +6,60 @@
     android:layout_height="match_parent"
     tools:context="marco.androidweb3jtest.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/createNewWalletBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Create new wallet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="366dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewWalletBtn" />
+
+    <EditText
+        android:id="@+id/adressEditText"
+        android:layout_width="370dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0x736c9Ef2e5c02EEc52Bd208F0692d4b5cACBF1b2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/getBalanceBtn"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adressEditText" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="Balance: "
+        app:layout_constraintTop_toBottomOf="@+id/getBalanceBtn"
+        tools:layout_editor_absoluteX="12dp" />
 
 </android.support.constraint.ConstraintLayout>
