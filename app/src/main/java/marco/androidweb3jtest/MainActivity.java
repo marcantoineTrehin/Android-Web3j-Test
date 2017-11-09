@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        wManager = new EthWalletManager(this.getBaseContext().getFilesDir().getParentFile());
+        wManager = new EthWalletManager(this.getFilesDir().getParentFile());
 
         createWalletButton.setOnClickListener(createWalletOnClick);
         balanceBtn.setOnClickListener(balanceOnClick);
